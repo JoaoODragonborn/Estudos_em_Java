@@ -26,10 +26,13 @@ public class Matrizes {
 		}
 		entrada.close();
 		
-		for (int i = 0; i < notasAlunos[i]; i++) {
-			
+		for (int i = 0; i < notasAlunos.length; i++) {
+			for (int j = 0; j < notasAlunos[i].length; j++) {
+				mediaAlunos[i] += notasAlunos[i][j];
+			}
+			mediaAlunos[i] /= notasAlunos[i].length;
 		}
-		
+		System.out.println(Arrays.toString(mediaAlunos));
 		/*
 		for (int i = 0; i < notasAlunos.length; i++) {
 			for (int c = 0; c < notasAlunos[i].length; c++) {
