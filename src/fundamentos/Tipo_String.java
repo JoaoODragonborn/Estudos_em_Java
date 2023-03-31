@@ -3,6 +3,7 @@ package fundamentos;
 import java.util.Date;
 
 public class Tipo_String {
+	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 		
 		System.out.println("Olá pessoal".charAt(2));
